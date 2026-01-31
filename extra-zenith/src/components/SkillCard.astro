@@ -1,0 +1,17 @@
+---
+const { title, description } = Astro.props;
+---
+
+<div class="skill-card">
+	<h4>{title}</h4>
+	<p>{description}</p>
+</div>
+
+<style>
+	.skill-card {
+		background: #ffffff;
+		padding: 18px;
+		border-radius: 14px;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+	}
+</style>

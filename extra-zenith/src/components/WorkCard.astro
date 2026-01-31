@@ -1,0 +1,38 @@
+---
+const { title, description, chips = [] } = Astro.props;
+---
+
+<article class="work-card">
+	<h3>{title}</h3>
+	<p>{description}</p>
+	{chips.length > 0 && (
+		<div class="chip-row">
+			{chips.map((chip) => (
+				<span>{chip}</span>
+			))}
+		</div>
+	)}
+</article>
+
+<style>
+	.work-card {
+		background: #ffffff;
+		border-radius: 18px;
+		padding: 20px;
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+	}
+
+	.chip-row {
+		display: flex;
+		gap: 8px;
+		margin-top: 12px;
+		flex-wrap: wrap;
+	}
+
+	.chip-row span {
+		padding: 4px 10px;
+		border-radius: 999px;
+		background: #eef1ff;
+		font-size: 0.75rem;
+	}
+</style>
