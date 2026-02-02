@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<main class="page transcript">
+		<header class="page__hero">
+			<p class="eyebrow">Engineering</p>
+			<h1>Transcript & Projects</h1>
+			<p class="lede">
+				Use this template to list coursework, labs, and research projects. Replace
+				the placeholders with your actual classes and project details.
+			</p>
+		</header>
+
+		<section class="section">
+			<h2>Education</h2>
+			<div class="card">
+				<div>
+					<h3>University of Notre Dame</h3>
+					<p>B.S. Computer Engineering · 2021–2025</p>
+				</div>
+				<div class="meta">
+					<span>GPA: 3.08</span>
+					<span>Location: Notre Dame, IN</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section grid-2">
+			<div class="card">
+				<h2>Coursework</h2>
+				<ul class="list">
+					<li>Calculus I, II, III</li>
+					<li>Physics I & II</li>
+					<li>Discrete Mathematics</li>
+					<li>Logic Design</li>
+					<li>Computer Architecture</li>
+					<li>Operating Systems</li>
+					<li>Database Concepts</li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2>Technical Skills</h2>
+				<ul class="list">
+					<li>Python · C · C++ · Java</li>
+					<li>Verilog · MATLAB · Assembly</li>
+					<li>SQL · HTML/CSS · JavaScript</li>
+					<li>Linux · Shell Scripting</li>
+					<li>Cadence · Virtuoso</li>
+					<li>React · Node.js</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Projects & Research</h2>
+			<div class="stack">
+				<article class="card">
+					<h3>Project Title</h3>
+					<p class="meta">Term · Team/Role</p>
+					<p>
+						Short description of the project, your contribution, and the outcome.
+					</p>
+					<ul class="list">
+						<li>Key responsibility or feature built</li>
+						<li>Tools: Python, Arduino, GIS, etc.</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>Project Title</h3>
+					<p class="meta">Term · Team/Role</p>
+					<p>
+						Short description of the project, your contribution, and the outcome.
+					</p>
+					<ul class="list">
+						<li>Key responsibility or feature built</li>
+						<li>Tools: Python, Arduino, GIS, etc.</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Work Experience (Engineering)</h2>
+			<div class="stack">
+				<article class="card">
+					<h3>Company · Role</h3>
+					<p class="meta">Dates</p>
+					<ul class="list">
+						<li>Impact statement describing what you built or improved.</li>
+						<li>Tools/tech used and scope of work.</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<h3>Company · Role</h3>
+					<p class="meta">Dates</p>
+					<ul class="list">
+						<li>Impact statement describing what you built or improved.</li>
+						<li>Tools/tech used and scope of work.</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.page {
+		padding: 48px 24px 96px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.page__hero {
+		margin-bottom: 32px;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		font-size: 0.78rem;
+		color: #6b7280;
+	}
+
+	.lede {
+		max-width: 60ch;
+	}
+
+	.section {
+		margin-top: 32px;
+	}
+
+	.grid-2 {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 20px;
+	}
+
+	.stack {
+		display: grid;
+		gap: 20px;
+	}
+
+	.card {
+		background: #ffffff;
+		padding: 20px;
+		border-radius: 16px;
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+	}
+
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		color: #6b7280;
+		font-size: 0.9rem;
+	}
+
+	.list {
+		margin: 12px 0 0;
+		padding-left: 18px;
+	}
+
+	.list li {
+		margin: 6px 0;
+	}
+</style>

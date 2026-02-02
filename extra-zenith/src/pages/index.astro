@@ -6,60 +6,68 @@ import TimelineItem from "../components/TimelineItem.astro";
 import WorkCard from "../components/WorkCard.astro";
 
 const stats = [
-	{ value: "8+", label: "Years" },
-	{ value: "40+", label: "Projects" },
-	{ value: "3", label: "Teams" },
-	{ value: "NYC", label: "Based" },
+	{ value: "2021–2025", label: "Notre Dame" },
+	{ value: "2024", label: "Navy Intern" },
+	{ value: "2025", label: "Pro Volleyball" },
+	{ value: "USA", label: "Based" },
 ];
 
 const workItems = [
 	{
-		title: "Flux Finance",
-		description: "Landing page refresh that lifted demo signups by 28%.",
-		chips: ["UX", "UI", "Astro"],
+		title: "Quipli · Onboarding Assistant",
+		description:
+			"Supported onboarding of rental companies, including account configuration, data entry, and product training.",
+		chips: ["Onboarding", "Ops", "Support"],
 	},
 	{
-		title: "Orbit Health",
-		description: "Patient portal redesign with a calmer, human-first approach.",
-		chips: ["Design", "Brand"],
+		title: "NAVAL SURFACE WARFARE CENTER",
+		description:
+			"Automated CAMEO database workflows and built interactive maps using Python/networkx.",
+		chips: ["Python", "Systems", "MBSE"],
 	},
 	{
-		title: "Studio North",
-		description: "Portfolio and CMS build for a small creative studio.",
-		chips: ["Build", "CMS"],
+		title: "Iowa Utilities Board",
+		description:
+			"Reviewed engineering dockets for multibillion‑dollar carbon pipeline and electrical projects.",
+		chips: ["Safety", "Review", "Engineering"],
 	},
 ];
 
 const timelineItems = [
 	{
-		date: "2023–Now",
-		title: "Senior Product Designer · Lumina",
-		description: "Led design system and conversion-focused marketing site rebuild.",
+		date: "Current",
+		title: "ATSC Wildcats · Professional Volleyball",
+		description: "Competing in the Austrian professional league.",
 	},
 	{
-		date: "2020–2023",
-		title: "UI Engineer · Studio Arc",
-		description: "Built brand sites and interactive product launches.",
+		date: "2021–2025",
+		title: "University of Notre Dame · NCAA Division I Athlete",
+		description:
+			"Trained 20 hours/week, including skills, lifts, film study, and setter training.",
 	},
 	{
-		date: "2017–2020",
-		title: "Designer · Freelance",
-		description: "Partnered with founders on MVPs and portfolio sites.",
+		date: "2021",
+		title: "High School Achievements",
+		description:
+			"Iowa Gatorade POY, 5A State Champion, All‑Tournament MVP, USA Volleyball Open National Champion.",
 	},
 ];
 
 const skills = [
 	{
-		title: "Design",
-		description: "Systems, prototyping, user flows, typography.",
+		title: "Engineering",
+		description:
+			"Computer engineering background with systems, data, and tooling experience.",
 	},
 	{
-		title: "Build",
-		description: "Astro, React, HTML/CSS, component libraries.",
+		title: "Coaching",
+		description:
+			"Private coach and mentor; led camps, clinics, and training programs.",
 	},
 	{
-		title: "Motion",
-		description: "Framer Motion, Lottie, scroll storytelling.",
+		title: "Athletics",
+		description:
+			"NCAA Division I volleyball athlete and professional player.",
 	},
 ];
 ---
@@ -68,21 +76,21 @@ const skills = [
 	<main class="profile">
 		<section class="hero">
 			<div class="hero__copy">
-				<p class="eyebrow">Product Designer · Frontend Builder</p>
-				<h1>Phyona — crafting friendly, high‑performing web experiences.</h1>
+				<p class="eyebrow">Athlete · Engineer · Coach</p>
+				<h1>Phyona — building on‑court leadership and engineering impact.</h1>
 				<p class="lede">
-					I design and build digital products with a focus on clarity, motion, and
-					conversion. Currently open to freelance and full‑time opportunities.
+					NCAA Division I volleyball athlete and computer engineering student with
+					experience across systems engineering, onboarding, and coaching.
 				</p>
 				<div class="cta">
-					<a class="btn btn--primary" href="/page1">View Work</a>
-					<a class="btn btn--ghost" href="/page2">Download Resume</a>
+					<a class="btn btn--primary" href="/engineering">Projects & Work</a>
+					<a class="btn btn--ghost" href="/page2">Contact</a>
 				</div>
 			</div>
 			<HeroCard
 				statusLabel="Currently"
-				availabilityLabel="Available"
-				title="Building bold, simple interfaces."
+				availabilityLabel="Open to Opportunities"
+				title="Competing, coaching, and building systems."
 				stats={stats}
 			/>
 		</section>
@@ -91,34 +99,34 @@ const skills = [
 			<div class="band__item">
 				<h2>Snapshot</h2>
 				<p>
-					I translate business goals into clean UI systems. Strong in Figma,
-					Astro, React, and motion-driven storytelling.
+					Computer engineering major and Division I athlete with experience in
+					systems engineering, data mapping, and product onboarding.
 				</p>
 			</div>
 			<div class="band__item">
 				<h2>Focus</h2>
 				<ul class="tags">
-					<li>Design Systems</li>
-					<li>Prototyping</li>
-					<li>Web Perf</li>
-					<li>Brand Sites</li>
+					<li>Systems Engineering</li>
+					<li>Data Mapping</li>
+					<li>Onboarding</li>
+					<li>Coaching</li>
 				</ul>
 			</div>
 			<div class="band__item">
 				<h2>Toolbox</h2>
 				<ul class="tags">
-					<li>Figma</li>
-					<li>Astro</li>
-					<li>React</li>
-					<li>Framer Motion</li>
+					<li>Python</li>
+					<li>NetworkX</li>
+					<li>Arduino</li>
+					<li>GIS</li>
 				</ul>
 			</div>
 		</section>
 
 		<section class="section">
 			<header class="section__head">
-				<h2>Selected Work</h2>
-				<a class="link" href="/page1">View all</a>
+				<h2>Projects & Work Experience</h2>
+				<a class="link" href="/engineering">View all</a>
 			</header>
 			<div class="grid">
 				{workItems.map((item) => (
@@ -129,7 +137,7 @@ const skills = [
 
 		<section class="section">
 			<header class="section__head">
-				<h2>Experience</h2>
+				<h2>Athletics Experience</h2>
 				<a class="link" href="/page3">Full timeline</a>
 			</header>
 			<div class="timeline">
@@ -141,7 +149,7 @@ const skills = [
 
 		<section class="section">
 			<header class="section__head">
-				<h2>Skills</h2>
+				<h2>Strengths</h2>
 			</header>
 			<div class="skill-grid">
 				{skills.map((item) => (
@@ -152,8 +160,8 @@ const skills = [
 
 		<section class="cta-band">
 			<div>
-				<h2>Let’s build something calm, clear, and memorable.</h2>
-				<p>Have a project in mind? I’m available for new work.</p>
+				<h2>Open to new opportunities in engineering and athletics.</h2>
+				<p>Reach out for collaborations, internships, or coaching work.</p>
 			</div>
 			<a class="btn btn--primary" href="/page2">Get in touch</a>
 		</section>
